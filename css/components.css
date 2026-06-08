@@ -5,17 +5,21 @@
     background-size: cover;
     background-repeat: no-repeat; /* Proíbe o celular de duplicar a foto */
     
-    /* No celular: foca na parte de cima para cobrir o bloco alto perfeitamente */
-    background-position: center top; 
+    /* No celular: tanto o degradê quanto a foto começam no topo juntos */
+    background-position: center top, center top; 
     
     padding: 3rem 0; 
     border-bottom: 4px solid #3498db; 
 }
 
-/* Aplica o seu corte cirúrgico APENAS em computadores e tablets grandes */
+/* Aplica o ajuste APENAS em computadores e tablets grandes */
 @media (min-width: 992px) {
     .page-header-hero {
-        background-position: center -60px; 
+        /* O primeiro valor ajusta o degradê, o segundo ajusta a imagem.
+           Dessa forma, ambos sobem juntos e o retângulo cobre 100% da foto! */
+        background-position: center -60px, center -60px; 
+        
+        /* DICA: Se o seu ajuste ideal for 40px, mude os dois valores acima para: center -40px, center -40px */
     }
 }
 
