@@ -5,20 +5,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    /* No celular: gradiente e imagem começam no topo normal */
-    background-position: center top, center top; 
+    /* Trava tudo no topo: resolve o bug do computador e o do celular de uma vez só */
+    background-position: center top; 
     
     padding: 3rem 0; 
     border-bottom: 4px solid #3498db; 
-}
-
-/* Aplica o ajuste APENAS em computadores e tablets grandes */
-@media (min-width: 992px) {
-    .page-header-hero {
-        /* CORREÇÃO AQUI: O gradiente fica travado cobrindo o bloco inteiro (center top) 
-           e APENAS a foto (segundo valor) sobe os -60px para fazer o corte que você quer. */
-        background-position: center top, center -60px; 
-    }
 }
 
 /* Faixa compacta para o topo das páginas secundárias */
