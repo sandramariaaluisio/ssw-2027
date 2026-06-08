@@ -1,7 +1,7 @@
 /* Faixa com a imagem de Maceió para as páginas secundárias */
 .page-header-hero {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%), 
-                      url('../images/maceio.jpeg');
+                      url('../images/maceio2.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     
