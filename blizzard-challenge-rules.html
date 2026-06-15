@@ -156,6 +156,51 @@
                  listening test results in anonymised form. In the past, all participating teams have agreed to this and we strongly encourage you to give this consent.</li></p>
                 
 
+
+
+
+                <div class="p-3 bg-light-blue rounded-3 mb-4 small">
+                    <h5 class="fw-bold text-dark-blue fs-6 mb-2"><i class="bi bi-megaphone-fill me-2 text-info"></i>LISTENING TEST</h5>
+                    <p class="mb-0">Formal listening tests will be conducted to evaluate the synthetic speech submitted. The exact design of the listening test will be determined by the organisers and is subject to change. 
+                        The listening test, as currently planned, will comprise two passes. In the first pass, all submitted systems will be evaluated. 
+                        In the second pass, further testing will be conducted for the best systems identified in the first pass. </p>
+                </div>
+                
+                <div class="card border-0 bg-light p-3 mb-3 shadow-sm rounded-3 small">
+                    <h5 class="fw-bold text-primary fs-6 mb-2">Pass 1: selecting the best systems</h5>
+                    
+                    <p class="mb-2">Subjective testing, using Eyetracking-MOS, of:</p>
+                    <ul class="mb-0 ps-3">
+                        <li class="mb-1">naturalness</li>
+                        <li class="mb-1">accent similarity</li>
+                        
+                        <li class="mb-0"><strong>Objective evaluation using TTSDS2 Score, which has 4 factors:</p>
+                            <ul class="text-muted ps-3 mt-1">
+                                <li><em>GENERIC:</em> Overall distributional similarity, via SSL embeddings.</li>
+                                <li><em>SPEAKER:</em> Realism of speaker identity.</li>
+                                <li><em>PROSODY:</em> Pitch, duration, and rhythm quality.</li>
+                                <li><em>INTELLIGIBILITY:</em> Uses ASR-derived features.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card border-0 bg-light p-3 mb-5 shadow-sm rounded-3 small">
+                    <h5 class="fw-bold text-secondary fs-6 mb-2">Pass 2: detailed analysis of the best systems</h5>
+                    <p class="mb-2">Subjective testing of:</p>
+                    <ul class="mb-0 ps-3">
+                        <li class="mb-1"><strong>accent similarity:</strong>.</li>
+                        <p class="mb-2">Objective testing of:</p>
+                        <li class="mb-1">speech quality</li>
+                        <li class="mb-0">consistency of voice throughout the entire range of a synthesized utterance</li>
+                    </ul>
+                </div>
+
+
+
+
+                
+                
                 <div class="row g-4 mb-4">
                     <div class="col-md-6">
                         <div class="p-3 bg-light rounded shadow-sm h-100">
@@ -171,39 +216,11 @@
                     </div>
                 </div>
 
-                <div class="p-3 bg-light-blue rounded-3 mb-4 small">
-                    <h5 class="fw-bold text-dark-blue fs-6 mb-2"><i class="bi bi-megaphone-fill me-2 text-info"></i>Listener Recruitment</h5>
-                    <p class="mb-0">Share evaluation test link with colleagues/students, distribute through academic/professional networks, and help ensure robust evaluation results.</p>
-                </div>
 
-                <p class="fw-bold mb-3">The evaluation will run in two pass/steps:</p>
+
+
                 
-                <div class="card border-0 bg-light p-3 mb-3 shadow-sm rounded-3 small">
-                    <h5 class="fw-bold text-primary fs-6 mb-2">Pass 1</h5>
-                    <p class="mb-2">One subjective metric and one objective will be used to select the best systems:</p>
-                    <ul class="mb-0 ps-3">
-                        <li class="mb-1"><strong>Accent similarity and Speech Naturalness:</strong> Evaluated via Eyetracking-MOS.</li>
-                        <li class="mb-0"><strong>TTSDS2 Score:</strong> Comprises 4 evaluation factors:
-                            <ul class="text-muted ps-3 mt-1">
-                                <li><em>GENERIC:</em> Overall distributional similarity, via SSL embeddings.</li>
-                                <li><em>SPEAKER:</em> Realism of speaker identity.</li>
-                                <li><em>PROSODY:</em> Pitch, duration, and rhythm quality.</li>
-                                <li><em>INTELLIGIBILITY:</em> Uses ASR-derived features.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="card border-0 bg-light p-3 mb-5 shadow-sm rounded-3 small">
-                    <h5 class="fw-bold text-secondary fs-6 mb-2">Pass 2</h5>
-                    <p class="mb-2">One subjective metric and two objective metrics will be used to show a detailed analysis of the best systems:</p>
-                    <ul class="mb-0 ps-3">
-                        <li class="mb-1"><strong>Accent Similarity:</strong> Evaluated using a test XAB.</li>
-                        <li class="mb-1"><strong>Audio Quality:</strong> Evaluated using Mel Cepstral Distortion (MCD).</li>
-                        <li class="mb-0"><strong>Speech Consistency:</strong> Analysis of multiple audio segments will be performed using the Speaker Embedding Extractor ECAPA2.</li>
-                    </ul>
-                </div>
-
+                
                 <h3 class="fw-bold text-dark-blue mb-3 fs-4 border-bottom pb-2">Documentation and Reporting</h3>
                 <h5 class="fw-bold text-dark-blue fs-6 mb-2">Paper Requirements</h5>
                 <p><strong>Regular Papers:</strong> Up to 4 pages for the main content, plus up to 2 additional pages reserved exclusively for references, acknowledgments, and disclosure of any generative AI tool use. Use the Interspeech 2027 template.</p>
